@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: system-ui;
+    background-color: #efefef;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+/*Custom Styles*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #724e2c;
+    padding: 20px 0;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Great Vibes', cursive;
+}
+
+header nav ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+header nav li {
+    padding: 0 15px;
+}
+
+header nav li a {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #f2cf8c
+}
+
+figcaption {
+    text-align: center;
+}
+
+figure img {
+    object-fit: cover;
+}
+
+section {
+    padding-top: 50px;
+}
+
+section h2, section h3, section form, section p, section address {
+    max-width: 80vw;
+    margin: 0 auto 30px auto;
+    text-align: center;
+}
+
+section p, section address {
+    margin-bottom: 50px;
+}
+
+address ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+address li:first-child {
+    margin-right: 50px;
+}
+
+form {
+    max-width: 600px;
+    background-color: #dfcdaa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-bottom: 20px;
+}
